@@ -68,7 +68,7 @@ export function Hero() {
         <div className={styles.diagram}>
           <HeroIdentityCollapse />
           <figcaption className={styles.caption}>
-            One person. One identity. Any network.
+            Eight identities today. One XID tomorrow.
           </figcaption>
         </div>
       </div>

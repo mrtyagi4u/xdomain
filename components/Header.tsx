@@ -22,7 +22,10 @@ export function Header() {
           <span className={styles.wordmark}>XDomain</span>
         </a>
 
-        <nav className={styles.nav} aria-label="Primary">
+        <nav
+          className={styles.nav}
+          aria-label="Primary"
+        >
           {links.map((link) => (
             <a key={link.href} href={link.href} className={styles.link}>
               {link.label}
@@ -52,7 +55,22 @@ export function Header() {
         className={`${styles.mobileMenu} ${open ? styles.mobileMenuOpen : ''}`}
       >
         {links.map((link) => (
-          <a key={link.href} href={link.href} className={styles.mobileLink} onClick={() => setOpen(false)}>
+          <a
+            key={link.href}
+            href={link.href}
+            className={styles.mobileLink}
+            onClick={(event) => {
+              // Close the menu first, then scroll once the layout has
+              // settled — otherwise the collapsing menu shifts the page
+              // while the browser is still scrolling to the anchor.
+              event.preventDefault();
+              setOpen(false);
+              const target = link.href;
+              window.setTimeout(() => {
+                document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' });
+              }, 280);
+            }}
+          >
             {link.label}
           </a>
         ))}

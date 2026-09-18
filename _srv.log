@@ -1,0 +1,12 @@
+
+> xdomain@0.1.0 start
+> next start -p 4323
+
+▲ Next.js 16.3.5
+- Local:         http://localhost:4323
+- Network:       http://10.0.0.47:4323
+✓ Ready in 250ms
+⚠ Warning: Next.js ignored package-lock.json in C:\Users\mrtya\.cline\data\workspaces\chat because it is outside the current Git repository (C:\Users\mrtya\.cline\data\workspaces\chat\xdomain).
+ To use this directory, set `outputFileTracingRoot` in your Next.js config.
+
+✓ Running next.config.js took 35ms
