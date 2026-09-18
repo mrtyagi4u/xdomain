@@ -8,9 +8,9 @@ import { Features } from '@/components/Features';
 import { ReachFlow } from '@/components/ReachFlow';
 import { PairwisePrivacy } from '@/components/PairwisePrivacy';
 import { AppointmentFlow } from '@/components/AppointmentFlow';
-import { CapabilityConstellation } from '@/components/CapabilityConstellation';
 import { AnyNetwork } from '@/components/AnyNetwork';
 import { Comparison } from '@/components/Comparison';
+import { Faq } from '@/components/Faq';
 import { FinalCta } from '@/components/FinalCta';
 
 export default function Page() {
@@ -22,10 +22,11 @@ export default function Page() {
         <WhyAddresses />
         <Features />
         <ReachFlow />
+        <AnyNetwork />
         <PairwisePrivacy />
         <AppointmentFlow />
-        <AnyNetwork />
         <Comparison />
+        <Faq />
         <FinalCta />
       </main>
       <Footer />

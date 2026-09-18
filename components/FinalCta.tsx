@@ -2,18 +2,18 @@ import styles from './FinalCta.module.css';
 
 export function FinalCta() {
   return (
-    <section id="faq" className={styles.root}>
+    <section id="cta" className={styles.root}>
       <div className="wrap">
         <div className={styles.content}>
           <span className={styles.kicker}>The future of identity</span>
-          <h2 className={styles.headline}>Your identity. Your domain. Your communication.</h2>
+          <h2 className={styles.headline}>One identity is all you need.</h2>
           <p className={styles.lead}>
-            XDomain is an independent research project exploring a future where you own your Internet identity,
-            control who can reach you, and communicate across any network.
+            You decide what you see, what you receive, and who can reach you — across any network,
+            without a carrier owning who you are.
           </p>
           <div className={styles.actions}>
-            <a href="#architecture" className={styles.primary}>Explore the architecture</a>
-            <a href="#research" className={styles.secondary}>Read the research questions</a>
+            <a href="#features" className={styles.primary}>Explore capabilities</a>
+            <a href="#faq" className={styles.secondary}>Common questions</a>
           </div>
         </div>
       </div>

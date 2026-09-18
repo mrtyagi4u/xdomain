@@ -18,13 +18,14 @@ export function Footer() {
         <nav className={styles.links} aria-label="Footer">
           <div className={styles.group}>
             <div className={styles.groupTitle}>Product</div>
-            <a href="#features">Features</a>
-            <a href="#architecture">How it works</a>
+            <a href="#features">Capabilities</a>
+            <a href="#reach">How it works</a>
+            <a href="#comparison">Compare</a>
           </div>
           <div className={styles.group}>
-            <div className={styles.groupTitle}>Company</div>
-            <a href="#research">Research</a>
-            <a href="#team">Team</a>
+            <div className={styles.groupTitle}>Learn</div>
+            <a href="#faq">Questions</a>
+            <a href="#any-network">Any network</a>
           </div>
         </nav>
 

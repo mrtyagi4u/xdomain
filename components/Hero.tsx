@@ -27,7 +27,7 @@ export function Hero() {
   return (
     <section id="start" className={styles.root} ref={sectionRef}>
       <div className={`wrap ${styles.inner}`}>
-                <div className={styles.textCol}>
+        <div className={styles.textCol}>
           <span className={styles.kicker}>Communication without borders</span>
           <h1 className={styles.headline}>
             Tired of carrying two phones? Paying roaming fees? Getting spammed?
@@ -53,13 +53,13 @@ export function Hero() {
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" className={styles.bulletIcon}>
                 <path stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/>
               </svg>
-              <span>Your identity, your rules</span>
+              <span>You decide who can reach you</span>
             </div>
           </div>
 
           <div className={styles.actions}>
-            <a href="#features" className={styles.primary}>See how it works</a>
-            <a href="#architecture" className={styles.secondary}>Technical details</a>
+            <a href="#features" className={styles.primary}>See what it can do</a>
+            <a href="#faq" className={styles.secondary}>Common questions</a>
           </div>
         </div>
 
@@ -73,5 +73,3 @@ export function Hero() {
     </section>
   );
 }
-
-export const dynamic = 'force-static';
