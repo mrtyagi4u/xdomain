@@ -170,7 +170,6 @@
     max-height: 0;
     overflow: hidden;
     background: var(--surface);
-    border-bottom: 1px solid var(--line);
     transition: max-height 0.25s ease;
   }
 

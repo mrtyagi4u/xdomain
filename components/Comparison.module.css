@@ -75,21 +75,58 @@
 }
 
 @media (max-width: 600px) {
-  .tableHeader,
-  .tableRow {
-    grid-template-columns: 1fr;
+  /* Header row becomes redundant once each cell is labelled */
+  .tableHeader {
+    display: none;
   }
 
-  .headerCell {
-    padding: 10px 16px;
+  .tableRow {
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 6px;
+  }
+
+  .tableRow:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
   }
 
   .cell {
     padding: 10px 16px;
-    border-bottom: 1px solid var(--line-soft);
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
   }
 
-  .tableRow {
-    border-bottom: none;
+  .tableRow .cell:first-child {
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 4px;
+  }
+
+  .cellNegative,
+  .cellPositive {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .cellNegative::before {
+    content: 'Today';
+    flex-shrink: 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-red);
+  }
+
+  .cellPositive::before {
+    content: 'XDomain';
+    flex-shrink: 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-green);
   }
 }
