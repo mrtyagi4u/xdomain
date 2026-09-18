@@ -1,0 +1,107 @@
+.EmailOptional {
+  padding: 90px 0;
+}
+
+.crumbs {
+  margin-bottom: 18px;
+}
+
+.headline {
+  font-size: clamp(28px, 4vw, 44px);
+  max-width: 24ch;
+  margin-bottom: 20px;
+}
+
+.lead {
+  font-size: 19px;
+  color: var(--ink-soft);
+  max-width: 60ch;
+  margin-bottom: 40px;
+  line-height: 1.55;
+}
+
+.compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 700px) {
+  .compare {
+    grid-template-columns: 1fr;
+  }
+}
+
+.compareCol {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.compareTag {
+  display: inline-block;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 14px;
+  color: var(--ink-soft);
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+
+.explain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 700px) {
+  .explain {
+    grid-template-columns: 1fr;
+  }
+}
+
+.explainCard {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.explainTag {
+  display: inline-block;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.explainCard p {
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.55;
+}

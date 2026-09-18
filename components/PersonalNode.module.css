@@ -1,0 +1,120 @@
+.PersonalNode {
+  padding: 90px 0;
+}
+
+.crumbs {
+  margin-bottom: 18px;
+}
+
+.headline {
+  font-size: clamp(28px, 4vw, 44px);
+  max-width: 24ch;
+  margin-bottom: 20px;
+}
+
+.lead {
+  font-size: 19px;
+  color: var(--ink-soft);
+  max-width: 60ch;
+  margin-bottom: 40px;
+  line-height: 1.55;
+}
+
+.nodeViz {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 400px;
+  margin: 0 auto 40px;
+}
+
+.node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nodeCore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background: var(--bg);
+  border: 2px solid var(--accent-cyan);
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.nodeIcon {
+  margin-bottom: 12px;
+}
+
+.nodeLabel {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.nodeConnections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.connection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.connLabel {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  color: var(--ink-soft);
+  min-width: 100px;
+}
+
+.connLine {
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.explain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 700px) {
+  .explain {
+    grid-template-columns: 1fr;
+  }
+}
+
+.explainCard {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.explainTag {
+  display: inline-block;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.explainCard p {
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.55;
+}

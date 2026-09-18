@@ -1,0 +1,93 @@
+.AnyNetwork {
+  padding: 90px 0;
+}
+
+.crumbs {
+  margin-bottom: 18px;
+}
+
+.headline {
+  font-size: clamp(28px, 4vw, 44px);
+  max-width: 24ch;
+  margin-bottom: 20px;
+}
+
+.lead {
+  font-size: 19px;
+  color: var(--ink-soft);
+  max-width: 60ch;
+  margin-bottom: 40px;
+  line-height: 1.55;
+}
+
+.networksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.networkCard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.networkCard:hover {
+  border-color: var(--accent-cyan);
+}
+
+.networkName {
+  display: block;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.networkDesc {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+.explain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 700px) {
+  .explain {
+    grid-template-columns: 1fr;
+  }
+}
+
+.explainCard {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.explainTag {
+  display: inline-block;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.explainCard p {
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.55;
+}

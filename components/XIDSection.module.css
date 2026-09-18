@@ -1,0 +1,145 @@
+.root {
+  padding: 90px 0;
+  background: var(--surface);
+  border-top: 1px solid var(--line-soft);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.crumbs {
+  margin-bottom: 18px;
+}
+
+.headline {
+  font-size: clamp(28px, 4vw, 44px);
+  max-width: 28ch;
+  margin-bottom: 20px;
+}
+
+.lead {
+  font-size: 19px;
+  color: var(--ink-soft);
+  max-width: 60ch;
+  margin-bottom: 38px;
+  line-height: 1.55;
+}
+
+.identView {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.card {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.cardTag {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.code {
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 16px;
+  color: var(--ink);
+  word-break: break-word;
+}
+
+.name {
+  font-family: ui-serif, Georgia, 'Times New Roman', serif;
+  font-size: 22px;
+  color: var(--ink);
+}
+
+.cardNote {
+  font-size: 12px;
+  color: var(--muted);
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-style: italic;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+  color: var(--line);
+}
+
+.vision {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.arrow {
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.explain {
+  color: var(--ink-soft);
+  font-size: 17px;
+  max-width: 56ch;
+  margin: 0 auto 34px;
+  text-align: center;
+  line-height: 1.55;
+}
+
+.exchange {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.exchangeTag {
+  display: block;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.chip {
+  background: var(--line-soft);
+  color: var(--ink);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+}
+
+@media (max-width: 620px) {
+  .vision {
+    flex-direction: column;
+    align-items: center;
+  }
+}
