@@ -1,0 +1,207 @@
+.root {
+  padding: 90px 0;
+}
+
+/* Keeps the section title in the document outline without duplicating the
+   headline that is already drawn inside the artwork. */
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Hairline panel, matching the .card language used across the page.
+   The fill matches the artwork background so the image edges disappear. */
+.frame {
+  background: #fdfdfc;
+  border: 1px solid var(--line-soft);
+  border-radius: 20px;
+  padding: 16px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.zoom {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: zoom-in;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.zoom:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 4px;
+}
+
+.art {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Touch affordance — only rendered on small screens. */
+.hint {
+  display: none;
+}
+
+.caption {
+  max-width: 74ch;
+  margin: 14px auto 2px;
+  padding: 0 6px;
+  text-align: center;
+  color: var(--muted);
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+/* Readable, indexable version of the diagram text.
+   Visually hidden on large screens, where the artwork is big enough to read. */
+.highlights {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  list-style: none;
+}
+
+.highlightTitle {
+  display: block;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.highlightNote {
+  display: block;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* Enlarged view */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  background: rgba(20, 19, 15, 0.88);
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  cursor: zoom-out;
+}
+
+.bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 2px 12px;
+  color: #fbfaf7;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid rgba(251, 250, 247, 0.35);
+  border-radius: 999px;
+  color: #fbfaf7;
+}
+
+.close:hover {
+  background: rgba(251, 250, 247, 0.14);
+}
+
+.close:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 2px;
+}
+
+.pan {
+  position: relative;
+  flex: 1;
+  overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 14px;
+  background: #fdfdfc;
+}
+
+/* Native 1:1 pixels so the small labels stay legible while panning. */
+.zoomArt {
+  display: block;
+  max-width: none;
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .root {
+    padding: 64px 0;
+  }
+
+  .frame {
+    border-radius: 16px;
+    padding: 10px;
+  }
+
+  .hint {
+    display: block;
+    margin-top: 10px;
+    font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-cyan);
+  }
+
+  .caption {
+    margin-top: 16px;
+    font-size: 13px;
+  }
+
+  .highlights {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 28px 0 0;
+    padding: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    display: grid;
+    gap: 14px;
+  }
+
+  .highlight {
+    padding-left: 12px;
+    border-left: 2px solid var(--line);
+  }
+}

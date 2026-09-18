@@ -109,7 +109,7 @@ export function ReachFlow() {
         </div>
 
         <p className={styles.caption}>
-          Wi-Fi Â· Fiber Â· 5G Â· Satellite Â· future networks â€” the transport can change while Tushar's identity stays unchanged.
+          Wi-Fi · Fiber · 5G · Satellite · future networks — the transport can change while Tushar's identity stays unchanged.
         </p>
       </div>
     </section>
