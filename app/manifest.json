@@ -1,12 +1,14 @@
 {
-  "name": "XDomain",
+  "name": "XDomain — One identity. Reach anyone, anywhere.",
   "short_name": "XDomain",
-  "description": "Independent research exploring provider-independent digital identity and communication.",
+  "description": "XDomain is one private, provider-independent identity that works across every network and device — no juggling phone numbers or emails, less spam and impersonation, easier appointments, and your identity travels with you.",
   "lang": "en",
   "dir": "ltr",
   "start_url": "/",
-  "background_color": "#fbfaf7",
-  "theme_color": "#fbfaf7",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0e2a3a",
   "icons": [
     {
       "src": "/icon-192.png",
@@ -19,6 +21,13 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
+

@@ -40,7 +40,16 @@
       ]
     },
     {
-      "source": "/og-image.png",
+      "source": "/(favicon\\.ico|favicon\\.svg|favicon-.*\\.png|apple-touch-icon\\.png|icon-.*\\.png|site\\.webmanifest)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/og-image.jpg",
       "headers": [
         {
           "key": "Cache-Control",
