@@ -1,13 +1,13 @@
 import styles from './Comparison.module.css';
 
 const rows = [
-  { feature: 'Identity ownership', today: 'Provider-owned', xdomain: 'You own it' },
-  { feature: 'Portability', today: 'Difficult', xdomain: 'Built-in' },
-  { feature: 'Privacy', today: 'Provider can see', xdomain: 'Pairwise private' },
-  { feature: 'Recovery', today: 'Customer support', xdomain: 'Protocol-based' },
-  { feature: 'Communication', today: 'One app per mode', xdomain: 'Unified via XDomain' },
-  { feature: 'Appointments', today: 'Share calendar', xdomain: 'Share slots only' },
-  { feature: 'Network lock-in', today: 'Phone = carrier', xdomain: 'Network is transport' },
+  { feature: 'Who owns it', today: 'Provider rents it to you', xdomain: 'You own it for life' },
+  { feature: 'Phone & email', today: 'Juggle both, forever', xdomain: 'Neither required' },
+  { feature: 'Spam & scams', today: 'Arrive before you can act', xdomain: 'Blocked until you allow' },
+  { feature: 'Moving & travel', today: 'New SIM, roaming bills', xdomain: 'Same identity, any network' },
+  { feature: 'Meetings', today: 'Share your whole calendar', xdomain: 'Share slots only' },
+  { feature: 'Lost phone', today: 'Beg customer support', xdomain: 'Recover via trusted contacts' },
+  { feature: 'Who sees your network', today: 'Platforms map it', xdomain: 'Nobody but you two' },
 ];
 
 export function Comparison() {
@@ -19,7 +19,7 @@ export function Comparison() {
         </div>
         <h2 className={styles.headline}>Today vs. XDomain.</h2>
         <p className={styles.lead}>
-          A simple comparison of how things work today versus how they could work with XDomain.
+          The same situations, side by side. Left is what you live with now — right is what changes.
         </p>
 
         <div className={styles.table}>

@@ -5,6 +5,10 @@ import styles from './Faq.module.css';
 
 const faqs = [
   {
+    q: 'How is this different from an email address or phone number?',
+    a: 'Email addresses and phone numbers are rented from a provider — they can be taken away, surveilled, or held hostage when you switch carriers. Your XDomain is cryptographically yours: it works across every network and no provider sits between you and the person reaching you.',
+  },
+  {
     q: 'Do I still need a phone number?',
     a: 'No. Your XDomain is the identity people reach you on. A phone number becomes optional — useful only as a transport, never as who you are.',
   },
@@ -27,6 +31,10 @@ const faqs = [
   {
     q: 'What if I lose my phone?',
     a: 'You recover your identity, not an account. Trusted devices and trusted contacts verify you, then your same XID is restored with all relationships intact.',
+  },
+  {
+    q: 'Is XDomain a product I can sign up for today?',
+    a: 'Not yet — XDomain is an independent research project mapping out what a provider-independent identity layer could look like. Everything shown here is buildable with today\u2019s technology, and the goal is a neutral layer anyone can build on.',
   },
 ];
 

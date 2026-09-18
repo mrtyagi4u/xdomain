@@ -5,7 +5,7 @@ const networks = [
   { name: 'Fiber', desc: 'Wired broadband' },
   { name: '5G', desc: 'Mobile networks' },
   { name: 'Satellite', desc: 'Remote areas' },
-  { name: 'Future', desc: ' whatever comes next' },
+  { name: 'Future', desc: 'Whatever comes next' },
 ];
 
 export function AnyNetwork() {

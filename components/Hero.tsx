@@ -28,12 +28,14 @@ export function Hero() {
     <section id="start" className={styles.root} ref={sectionRef}>
       <div className={`wrap ${styles.inner}`}>
         <div className={styles.textCol}>
-          <span className={styles.kicker}>Communication without borders</span>
+          <span className={styles.kicker}>One person. One identity. Any network.</span>
           <h1 className={styles.headline}>
-            Tired of carrying two phones? Paying roaming fees? Getting spammed?
+            One identity for everything. No carriers, no spam, no borders.
           </h1>
           <p className={styles.lead}>
-            XDomain gives you one Internet identity that works everywhere. No phone number. No email address. No carrier lock-in. Just a single domain that lets you communicate directly with anyone — whether you're on WiFi, 5G, or traveling abroad.
+            XDomain is a single Internet identity — yours, not your provider&apos;s. Reach anyone and be
+            reached on your terms: no second phone abroad, no roaming bill shock, no spam folder
+            roulette. One domain that works on Wi-Fi, 5G, or satellite.
           </p>
 
           <div className={styles.bullets}>
@@ -41,13 +43,13 @@ export function Hero() {
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" className={styles.bulletIcon}>
                 <path stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/>
               </svg>
-              <span>No roaming charges ever</span>
+              <span>Yours, not your carrier&apos;s — keep it for life</span>
             </div>
             <div className={styles.bulletItem}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" className={styles.bulletIcon}>
                 <path stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/>
               </svg>
-              <span>No spam, no unwanted messages</span>
+              <span>Permission first — spam can&apos;t reach you</span>
             </div>
             <div className={styles.bulletItem}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" className={styles.bulletIcon}>
@@ -58,8 +60,8 @@ export function Hero() {
           </div>
 
           <div className={styles.actions}>
-            <a href="#features" className={styles.primary}>See what it can do</a>
-            <a href="#faq" className={styles.secondary}>Common questions</a>
+            <a href="#capabilities" className={styles.primary}>See what it can do</a>
+            <a href="#comparison" className={styles.secondary}>Today vs. XDomain</a>
           </div>
         </div>
 

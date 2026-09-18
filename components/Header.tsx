@@ -6,6 +6,7 @@ import styles from './Header.module.css';
 
 const links = [
   { href: '#reach', label: 'How it works' },
+  { href: '#capabilities', label: 'Capabilities' },
   { href: '#comparison', label: 'Compare' },
   { href: '#faq', label: 'FAQ' },
 ];
@@ -30,7 +31,7 @@ export function Header() {
         </nav>
 
         <div className={styles.actions}>
-          <a href="#features" className={styles.primary}>Explore</a>
+          <a href="#capabilities" className={styles.primary}>Explore</a>
           <button
             type="button"
             className={styles.menuButton}

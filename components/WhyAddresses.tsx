@@ -2,15 +2,16 @@ import styles from './WhyAddresses.module.css';
 
 export function WhyAddresses() {
   return (
-    <section id="addresses" className={styles.root}>
+    <section id="why-addresses" className={styles.root}>
       <div className="wrap">
         <div className={styles.crumbs}>
           <span className="kicker">Fragmented identity</span>
         </div>
-        <h2 className={styles.headline}>Why does one person need six addresses to exist online?</h2>
+        <h2 className={styles.headline}>Six addresses. Zero ownership.</h2>
         <p className={styles.lead}>
-          These systems were built at different times for different networks. The result is fragmented identity.
-          Most of these identifiers are not truly owned by the person. Providers usually sit between you and the person trying to reach you.
+          One person needs six addresses to exist online — and none of them truly belongs to them.
+          Phone numbers, emails, usernames: rented from providers who sit between you and everyone
+          trying to reach you.
         </p>
 
         <div className={styles.tods}>

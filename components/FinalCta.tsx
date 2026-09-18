@@ -6,13 +6,13 @@ export function FinalCta() {
       <div className="wrap">
         <div className={styles.content}>
           <span className={styles.kicker}>The future of identity</span>
-          <h2 className={styles.headline}>One identity is all you need.</h2>
+          <h2 className={styles.headline}>One identity. Zero borders.</h2>
           <p className={styles.lead}>
-            You decide what you see, what you receive, and who can reach you — across any network,
-            without a carrier owning who you are.
+            No second SIM abroad. No spam folder. No provider owning your name.
+            Decide who reaches you, on any network — your identity travels with you.
           </p>
           <div className={styles.actions}>
-            <a href="#features" className={styles.primary}>Explore capabilities</a>
+            <a href="#capabilities" className={styles.primary}>See the capabilities</a>
             <a href="#faq" className={styles.secondary}>Common questions</a>
           </div>
         </div>

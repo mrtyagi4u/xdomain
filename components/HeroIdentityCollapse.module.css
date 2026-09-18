@@ -1,1 +1,265 @@
-﻿.root { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+﻿.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 28px 24px 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(20, 19, 15, 0.06);
+}
+
+.tag {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--line-soft);
+  border: 1px solid var(--line);
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+.today {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.idCard {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  color: var(--ink-soft);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 9px 13px;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.idCard:hover {
+  border-color: var(--accent-cyan);
+  color: var(--ink);
+}
+
+.focused {
+  border-color: var(--accent-cyan) !important;
+  color: var(--ink) !important;
+  box-shadow: 0 0 0 3px rgba(31, 182, 198, 0.15);
+  transform: translateY(-1px);
+}
+
+.idLabel {
+  white-space: nowrap;
+}
+
+.target {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 14px 20px;
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  width: 100%;
+}
+
+.targetLabel {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+}
+
+.targetNote {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.bullets {
+  color: var(--line);
+}
+
+.collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 30px 0 10px;
+}
+
+.person {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--surface);
+  background: var(--ink);
+  padding: 12px 28px;
+  border-radius: 999px;
+}
+
+.mergeArrows {
+  color: var(--accent-cyan);
+  animation: pulse 0.7s ease infinite alternate;
+}
+
+@keyframes pulse {
+  from { opacity: 0.4; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.xdomain {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+  animation: rise 0.5s ease both;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.personRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--ink);
+  color: #fbfaf7;
+  border-radius: 14px;
+  padding: 14px 18px;
+}
+
+.personRow .person {
+  background: none;
+  padding: 0;
+  color: #fbfaf7;
+  font-size: 18px;
+}
+
+.xidStack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.xidLabel {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--accent-cyan);
+}
+
+.xidValue {
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 13px;
+  color: #fbfaf7;
+}
+
+.capabilities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.cap {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  background: rgba(31, 182, 198, 0.08);
+  border: 1px solid rgba(31, 182, 198, 0.35);
+  border-radius: 10px;
+  padding: 10px 6px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cap:hover {
+  background: rgba(31, 182, 198, 0.16);
+  transform: translateY(-1px);
+}
+
+.networkRow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid var(--line-soft);
+  padding-top: 16px;
+}
+
+.networkLabel {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-green);
+  text-align: center;
+}
+
+.networks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.netChip {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+
+.hint {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .root {
+    padding: 22px 16px 16px;
+  }
+
+  .capabilities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mergeArrows,
+  .xdomain {
+    animation: none;
+  }
+}
+
