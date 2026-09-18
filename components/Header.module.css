@@ -169,13 +169,15 @@
     gap: 0;
     max-height: 0;
     overflow: hidden;
+    visibility: hidden;
     background: var(--surface);
-    transition: max-height 0.25s ease;
+    transition: max-height 0.25s ease, visibility 0.25s ease;
   }
 
   .mobileMenuOpen {
     max-height: 240px;
     padding: 4px 20px 12px;
+    visibility: visible;
   }
 }
 
