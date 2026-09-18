@@ -12,6 +12,7 @@ import { Comparison } from '@/components/Comparison';
 import { WhyXDomainMatters } from '@/components/InfoGraphic';
 import { Faq } from '@/components/Faq';
 import { FinalCta } from '@/components/FinalCta';
+import { XSCAMRelation } from '@/components/XSCAMRelation';
 
 export default function Page() {
   return (
@@ -30,6 +31,7 @@ export default function Page() {
         <WhyXDomainMatters />
         <Faq />
         <FinalCta />
+        <XSCAMRelation />
       </main>
       <Footer />
     </>

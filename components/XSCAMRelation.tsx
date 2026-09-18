@@ -39,7 +39,14 @@ export function XSCAMRelation() {
         </div>
 
         <div className={styles.link}>
-          <a href="/xscam" className={styles.linkButton}>Explore XSCAM</a>
+          <a
+            href="https://www.xscam.pro"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.linkButton}
+          >
+            Explore XSCAM
+          </a>
         </div>
       </div>
     </section>
